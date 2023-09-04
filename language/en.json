@@ -1,0 +1,22 @@
+{
+    "welcome": {
+        "start": "Start"
+    },
+    
+        
+    "footer": {
+        "text": "© 2023 • Vinícius Pontes Lima"
+    },
+
+    
+    "menu": { 
+        "menu": ["Works", "About me", "Contact", "Settings", "Exit"],
+        "footer": ["Know my works", "About me", "Contact me", "Change the settings", "To the next!"]
+    },
+
+    "page": {
+        "back": "Back"
+    }
+
+  }
+  

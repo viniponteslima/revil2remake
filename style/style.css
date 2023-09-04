@@ -1,0 +1,278 @@
+* {
+    background-color: transparent;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select:none;  
+    -moz-user-select:none;     
+    -ms-user-select:none;      
+    user-select:none;
+}
+
+:root {
+    font-size: 124px;
+
+    /* Variables: */
+    --primary-color: #181818;
+    --secundary-color: #;
+
+
+}
+
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--primary-color);
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+    
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #343434;
+    border-radius:1rem;
+}
+
+
+html {
+    background-color: var(--primary-color);
+}
+
+
+header {
+    opacity: 0.75;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.back {
+    cursor: pointer;
+    text-align: center;
+    align-self: end;
+    opacity: 0.5;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.title {
+    font-size: 2rem;
+    opacity: 0.75;
+    font-weight:bold;
+    filter: blur(0.06rem);
+    text-transform: uppercase;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, white, var(--primary-color));
+}
+
+
+body {
+    opacity: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    min-height: 100vh;
+    align-self: center;
+}
+
+
+main {
+    display: grid;
+}
+
+
+.content {
+    padding: 20px;
+}
+
+
+footer {
+    width:100vw;
+    cursor:default;
+    opacity: 25%;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+footer:hover {
+    opacity: 50%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+#welcome {
+    opacity: 1;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10;
+    margin-bottom: 10rem;
+    
+}
+
+
+#welcome h1 {
+    font-size: 6rem;
+    opacity: 75%;
+    font-weight: 700;
+}
+
+
+#welcome h2 {
+    width: fit-content;
+    filter: blur(0.04rem);
+    align-self:center;
+    opacity: 50%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+#welcome h2:hover {
+    filter: blur(0.05rem);
+    opacity: 75%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+#menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.page {
+    display: flex;
+    margin: 0px 5rem 3rem 5rem;
+    flex-direction:row;
+}
+
+.work {
+    width: 60%;
+}
+
+.page #menu {
+    width: 40%;
+    height: 100%;
+}
+
+
+.page #menu span {
+    padding-left: 3rem;
+    font-size: 1.5rem;
+}
+
+.page #menu span:hover {
+    padding-left: 4rem;
+}
+
+
+#menu span {
+    opacity: 50%;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 2rem;
+    filter: blur(0.08rem);
+    padding: 0.5rem;
+}
+
+
+#menu span:hover {
+    opacity: 75%;
+    filter: blur(0.04rem);
+    padding-left:1.5rem;
+    transition: all 0.3s;
+}
+
+
+@media ((max-width: 7680px) and (max-height: 4320px)) {
+    :root {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 3840px) and (max-height: 2160px) {
+    :root {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1920px) and (max-height: 1080px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1280px) and (max-height: 720px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 720px) and (max-height: 480px) {
+    :root {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px){
+    :root {
+        font-size: 10px;
+    }
+    /* body {
+        align-items: start;
+    } */
+    #welcome h1 {
+        padding: 10rem 0;
+    }
+    #welcome h2 {
+        font-size: 3rem;
+    }
+    #menu {
+        align-items: center;
+        padding: 0 0;
+    }
+    #menu span{
+        margin: 0px;
+        padding: 0px;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+    }
+    #menu span:hover {
+        margin: 0px;
+        padding: 0px 0px 2rem 0px;
+        font-size: 3.2rem;
+        transition: all 0.3s;
+    }
+    footer {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 320px) or (max-height: 320px){
+    body { display: none; }
+}

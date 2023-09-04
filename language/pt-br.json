@@ -1,0 +1,41 @@
+{
+    "welcome": {
+        "start": "Iniciar"
+    },
+        
+    
+    "footer": {
+        "text": "© 2023 • Vinícius Pontes Lima"
+    },
+
+
+    "menu": { 
+        "menu": ["Projetos", "Sobre mim", "Contato", "Configurações", "Sair"],
+        "footer": ["Conheça meus trabalhos", "Sobre mim", "Contate me", "Alterar configurações", "Até a próxima!"]
+    },
+
+    "page": {
+        "back": "Voltar"
+    },
+
+
+    "works": {
+        
+    },
+
+    
+    "about": {
+        
+    },
+
+    "contact": {
+        
+    },
+
+    "settings": {
+        
+    }
+
+
+  }
+  

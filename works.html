@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Lima</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Works -->
+    <header>
+        <span class="back" onclick="Open('./menu.html')">❮</span>
+        <h2 class="title">Works</h2>
+    </header>
+
+    <main>
+        <section class="page">
+            <div id="menu">
+                <span>Works</span>
+                <span>About me</span>
+                <span>Contact</span>
+                <span>Settings</span>
+                <span onclick="changePage('menu', 'welcome')">Exit</span>
+            </div>
+            <div class="work">
+                <h3>Title</h3>
+                <p>Paragraph</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2023 • Vinícius Pontes Lima
+    </footer>
+</body>
+<script src="script/script.js"></script>
+<script>
+    loadPage()
+
+
+    function applyTranslations(translations) {
+        var title = document.getElementsByClassName("title")[0]
+        title.textContent = translations.menu.menu[0]
+
+
+        var menu = document.getElementById("menu")
+        var len = Array(translations.menu.menu)[0]
+
+
+        const footer = document.getElementsByTagName('footer')[0]
+        const footerDefault = footer.textContent
+
+        var back = document.getElementsByClassName('back')[0]
+
+        back.addEventListener("mouseenter", ()=> { footer.textContent = translations.page.back })
+        back.addEventListener("mouseleave", ()=> { footer.textContent = footerDefault })
+
+        for (let i = 0; i < len.length; i++) {
+            let element = menu.getElementsByTagName("span")[i];
+            element.textContent = translations.menu.menu[i]
+
+            element.addEventListener("mouseenter", ()=> { footer.textContent = translations.menu.footer[i] })
+            element.addEventListener("mouseleave", ()=> { footer.textContent = footerDefault })
+        }
+    }
+</script>
+</html>

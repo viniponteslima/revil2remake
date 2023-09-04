@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Lima</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <header></header>
+    <main>
+        <!-- Welcome -->
+        <section id="welcome">
+            <h1>Vinicius Lima</h1>
+            <h2 id="start" onclick="Open('./menu.html')"></h2>
+        </section>
+    </main>
+
+    <footer>
+        © 2023 • Vinícius Pontes Lima
+    </footer>
+</body>
+
+<script src="script/script.js"></script>
+<script>
+    loadPage()
+    
+    function applyTranslations(translations) {
+        document.getElementById('start').textContent = translations.welcome.start;
+    }
+
+</script>
+</html>
